@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact-support.css">
+  </head>
+
+  <style>
+    /**/
+    
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    .main-cont {
+      font-family: 'Ubuntu', sans-serif;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 85px auto;
+      height: 100vh;
+}
+    .sidebar{
+      height: 65%;
+    }
+    .sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: #091429;
+    color: #ffffff;
+    }
+    #sidebar-wrapper {
+    min-height: 200vh;
+    /* position: fixed; */
+    width: 40vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    }
+    .hero-img {
+    height: 60vh;
+    width: 45vw;
+    align-self: center;
+    }
+    .sidebar-content {
+    margin: 45px 12px 45px 12px;
+  }
+  .icon {
+    height: 13px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+.nav-txt {
+    font-size: 16px;
+    padding-bottom: 20px;
+  
+}
+.nav-txt a {
+    font-size: 1em;
+    font-weight: 600px;
+    padding-bottom: 20px;
+  
+}
+.logo-img {
+    height: 30px;
+    margin-left: 30px;
+}
+.nav-table {
+    margin: 50px 30px;
+}
+    .contact-form-btn:hover {
+    background-color: #0ABAB5;
+    border: 1px solid #0ABAB5;
+    cursor: pointer;
+    font-family: inherit;
+    }
+    .contact-form-btn {
+    width: 155px;
+    padding: 10px 20px;
+    font-size: 18px;
+    align-self: center;
+    color: #ffffff;
+    background-color: #0ABAB5;
+    border: 1px solid #0ABAB5;
+    font-family: inherit;
+    }
+    .content>h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.contact-form {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 60px 15vw;
+    font-family: inherit;
+}
+
+select {
+  border: none;
+  color: white;
+  background-color: #091429;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+option {
+  border: none;
+  background-color:#2f3441;
+  color: white;
+  border: 1px solid #2f3441;
+  cursor: pointer;
+}
+  </style>
+
+  <body>
+    <div class="main-cont">
+      <div class="header">
+        <h3>Contact Support</h3>
+        <div class="header-items">
+          <div>
+            <a href="#"><img src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/help_pvv3ie.svg" class="header-icon"></a>
+            <a href="#"><p>Support</p></a>
+          </div>
+          <div>
+            <a href="#"><img src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/notification_1_ddc0vh.svg" class="header-icon"></a>
+          </div>
+          <div class="dropdown">
+            <a href="#"><img src="https://res.cloudinary.com/slarin/image/upload/v1570685959/contact-support/avatar_ofgo0e.svg" class="avatar-sm"></a>
+            <p>Juliet</p>
+            <img src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/Vectordown-caret_fla9dn.svg" class="caret-down" onclick="drop()"></i>
+            <div class="dropdown-menu" id="dd-menu">
+              <a href="#" class="menu-item">Action</a>
+              <a href="#" class="menu-item">Another action</a>
+              <a href="#" class="menu-item">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--new side bar-->
+
+<!--new side bar-->
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <img class="logo-img" src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/lancers_zump2v.svg">
+          <table class="nav-table">
+            <tr>
+              <td><img src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/home_ytnlm7.svg" class="icon"></td><td class="nav-txt"><a href="#">Dashboard</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://res.cloudinary.com/slarin/image/upload/v1570685955/contact-support/customer_bpnu4k.svg" class="icon"></td><td class="nav-txt"><a href="#">Clients</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://res.cloudinary.com/slarin/image/upload/v1570685955/contact-support/budget_1_bosmd2.svg" class="icon"></td><td class="nav-txt"><a href="#">Estimates</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://res.cloudinary.com/slarin/image/upload/v1570685955/contact-support/Group_khqbxt.svg" class="icon"></td><td class="nav-txt"><select>
+                  <option>Project</option>
+                  <option>Status</option>
+                  <option>Overview</option>
+                  <option>Collaborators</option>
+                  <option>Task</option>
+                  <option>Documents</option>
+                </select> 
+              </td>
+            </tr>
+            <tr>
+              <td><img src="https://res.cloudinary.com/slarin/image/upload/v1570685955/contact-support/Group-invoices_i80pqb.svg" class="icon"></td><td class="nav-txt"><a href="#">Invoices</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/policy_jn93r8.svg" class="icon"></td><td class="nav-txt"><a href="#">Contracts</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://res.cloudinary.com/samtech/image/upload/v1570727365/approval.svg" class="icon"></td><td class="nav-txt"><a href="#">Proposals</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="content">
+        <img src="https://res.cloudinary.com/slarin/image/upload/v1570685956/contact-support/Contact_us_1_rm3q98.png" alt="contact help" class="hero-img">
+        <h4>Read the frequently asked questions<br>or send us a message</h4>
+
+        <form class="contact-form">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="inpt">
+          <label for="message" class="form-label">Message</label>
+          <textarea rows="15" class="txt-area"></textarea>
+          <button class="contact-form-btn">Send</button>
+        </form>
+      </div>
+
+    </div>
+
+    <script>
+      function drop() {
+        let x = document.getElementById('dd-menu');
+        x.classList.toggle('active');
+      }
+    </script>
+  </body>
+
+</html>
